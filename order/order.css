@@ -70,6 +70,10 @@ input::placeholder {
   color: skyblue;
 }
 
+input:focus {
+  outline: 3px solid skyblue;
+}
+
 button {
   width: 100px;
   display: inline-block;
