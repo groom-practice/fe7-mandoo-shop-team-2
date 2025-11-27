@@ -1,8 +1,6 @@
 const response = await fetch("../db.json");
 const data = await response.json();
 
-console.log(data);
-
 const ul = document.querySelector("ul");
 
 let currentPage = 1;
@@ -13,7 +11,6 @@ let posts = [];
 async function fetchPosts() {
   const response = await fetch("../db.json");
   posts = await response.json();
-  console.log(posts);
   displayPosts();
 }
 
