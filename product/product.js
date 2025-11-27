@@ -28,7 +28,7 @@ function displayPosts() {
     const postElement = document.createElement("li");
     postElement.classList.add("show", "hidden");
     postElement.innerHTML = `
-      <img src="/imgs/${post.productImgFileName}" />
+      <img src="../imgs/${post.productImgFileName}" />
       <div>
       <h2>${post.productName}</h2>
       <p>${post.productPrice}</p>
@@ -54,7 +54,7 @@ function setObserver() {
   const options = {
     root: null,
     rootMargin: "0px",
-    threshold: 1.0,
+    threshold: 0.5,
   };
 
   const observer = new IntersectionObserver((entries, observer) => {
@@ -100,7 +100,7 @@ ul.addEventListener("click", (e) => {
     const isConfirm = confirm(
       `${posts[productId].productName}을 주문하시겠습니까?`
     );
-    if (isConfirm) location.href = "/order/index.html";
+    if (isConfirm) location.href = "../order/order.html";
     return;
   }
 });
