@@ -50,7 +50,7 @@ h1 {
 .loginNav > button {
   display: inline-block;
   padding: 5px 10px;
-  background-color: royalblue;
+  background-color: skyblue;
   color: white;
   border: none;
   border-radius: 5px;
@@ -68,5 +68,5 @@ h1 {
 
 .loginNav > a:hover,
 .loginNav > a:active {
-  color: royalblue;
+  color: skyblue;
 }

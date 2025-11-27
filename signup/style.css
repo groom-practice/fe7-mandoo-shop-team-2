@@ -40,7 +40,7 @@ input {
 .signupNav > button {
   display: inline-block;
   padding: 5px 10px;
-  background-color: royalblue;
+  background-color: skyblue;
   color: white;
   border: none;
   border-radius: 5px;
@@ -58,5 +58,5 @@ input {
 
 .signupNav > a:hover,
 .signupNav > a:active {
-  color: royalblue;
+  color: skyblue;
 }
