@@ -40,7 +40,7 @@ a {
 
 a:hover,
 a:active {
-  color: royalblue;
+  color: skyblue;
 }
 
 .home {
@@ -63,7 +63,7 @@ a:active {
   display: inline-block;
   padding: 10px 20px;
   margin-top: 100px;
-  background-color: royalblue;
+  background-color: skyblue;
   color: white;
   border: none;
   border-radius: 5px;
@@ -73,5 +73,5 @@ a:active {
 }
 
 .home > .loginBtn:hover {
-  background-color: #3551a5;
+  background-color: rgb(98, 168, 196);
 }
