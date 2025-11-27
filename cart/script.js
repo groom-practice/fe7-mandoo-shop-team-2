@@ -53,6 +53,16 @@ deleteButton.addEventListener("click", () => {
 const deleteAllBtn = document.querySelector(".delete-all-button");
 
 deleteAllBtn.addEventListener("click", () => {
-  localStorage.removeItem("products");
-  location.reload();
+  const cartItems = JSON.parse(localStorage.getItem("products"));
+  // 장바구니가 비어있는지 확인
+  if (!cartItems || cartItems.length === 0) {
+    alert("장바구니에 삭제할 상품이 없습니다.");
+    return;
+  }
+
+  // 확인 후 삭제
+  if (confirm("장바구니의 모든 상품을 삭제하시겠습니까?")) {
+    localStorage.removeItem("products");
+    location.reload();
+  }
 });
